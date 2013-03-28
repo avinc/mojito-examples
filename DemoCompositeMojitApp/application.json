@@ -1,0 +1,36 @@
+[
+    {
+        "settings": [ "master" ],
+        "appPort": "8666",
+        "specs": {
+            "page" : {
+                "type" : "HTMLFrameMojit",
+                "config" : {
+                    "deploy" : true,
+                    "child" : {
+                        "type" : "Container",
+                        "config" : {
+                            "children" : {
+                                "header" : {
+                                    "type" : "Header"
+                                },
+                                "body" : {
+                                    "type" : "Body"
+                                },
+                                "footer" : {
+                                    "type" : "Footer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "settings": [ "environment:development" ],
+        "staticHandling": {
+            "forceUpdate": true
+        }
+    }
+]
