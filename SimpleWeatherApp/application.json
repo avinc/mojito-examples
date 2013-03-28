@@ -1,0 +1,23 @@
+[
+    {
+        "settings": [ "master" ],
+        "appPort": "8666",
+        "specs": {
+            "weather" : {
+                "type" : "HTMLFrameMojit",
+                "config" : {
+                    "deploy" : true,
+                    "child" : {
+                        "type" : "Weather"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "settings": [ "environment:development" ],
+        "staticHandling": {
+            "forceUpdate": true
+        }
+    }
+]

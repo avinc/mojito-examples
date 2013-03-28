@@ -1,0 +1,9 @@
+<div id="{{mojit_view_id}}">
+    <h1>{{channel.title}}</h1>
+    <h2>{{channel.item.title}}</h2>
+    <div>Temparatue: {{channel.item.condition.temp}} {{channel.units.temperature}}</div>
+    <div>Condition: {{channel.item.condition.text}}</div>
+    <div id="forecast"></div>
+    <button id="show-forecast">Show Forecast</button>
+    <p>Data at {{queryTime}}</p>
+</div>
