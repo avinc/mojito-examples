@@ -22,34 +22,33 @@ YUI.add('Weather', function(Y, NAME) {
          *        to the Mojito API.
          */
         index: function(ac) {
-            ac.models.get('WeatherModelFoo').getData(function(err, data) {
+            ac.models.get('WeatherModel').getData(function(err, data) {
                 if (err) {
                     ac.error(err);
                     return;
                 }
                 ac.assets.addCss('./index.css');
                 ac.done({
-                    channel : data.results.channel,
+                    channel: data.results.channel,
                     queryTime: data.created
                 });
             });
         },
+
         forecast: function(ac) {
-            ac.models.get('WeatherModelFoo').getData(function(err, data) {
+            ac.models.get('WeatherModel').getData(function(err, data) {
                 if (err) {
                     ac.error(err);
                     return;
                 }
                 ac.assets.addCss('./index.css');
                 ac.done({
-                    channel : data.results.channel,
+                    channel: data.results.channel,
                     queryTime: data.created
                 });
             });
         }
 
-
-
     };
 
-}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'WeatherModelFoo']});
+}, '0.0.1', {requires: ['mojito', 'mojito-assets-addon', 'mojito-models-addon', 'WeatherModel']});

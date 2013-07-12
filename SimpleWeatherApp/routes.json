@@ -1,9 +1,9 @@
 [{
     "settings": [ "master" ],
     "weather": {
-        "verb" : ["get"],
-        "path" : "/weather",
-        "call" : "weather.index"
+        "verb": ["get"],
+        "path": "/weather",
+        "call": "weather.index"
     }
 
 }]

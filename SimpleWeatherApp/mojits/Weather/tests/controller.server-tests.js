@@ -30,7 +30,7 @@ YUI.add('Weather-tests', function(Y) {
                 },
                 models: {
                     get: function(modelName) {
-                        A.areEqual('WeatherModelFoo', modelName, 'wrong model name');
+                        A.areEqual('WeatherModel', modelName, 'wrong model name');
                         return {
                             getData: function(cb) {
                                 cb(null, modelData);

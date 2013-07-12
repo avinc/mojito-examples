@@ -1,21 +1,13 @@
 {
     "name": "SimpleWeatherApp",
-    "description": "My Mojito application",
+    "description": "Simple Weather app",
     "version": "0.0.1",
-    "author": {
-        "name": "Your Name",
-        "email": "nobody@yahoo-inc.com"
-    },
-    "contributors": [
-          {
-              "name": "Your Name",
-              "email": "nobody@yahoo-inc.com"
-          }
-    ],
+    "author": "Keshavaprasad B S <kbsbng@yahoo-inc.com>",
+    "contributors": [],
     "dependencies": {
-        "mojito": "0.5.x"
+        "mojito": ">0.6"
     },
     "engines": {
-        "node": ">0.6"
+        "node": ">0.8"
     }
 }

@@ -3,12 +3,12 @@
         "settings": [ "master" ],
         "appPort": "8666",
         "specs": {
-            "weather" : {
+            "weather": {
                 "type" : "HTMLFrameMojit",
-                "config" : {
-                    "deploy" : true,
-                    "child" : {
-                        "type" : "Weather"
+                "config": {
+                    "deploy": true,
+                    "child": {
+                        "type": "Weather"
                     }
                 }
             }
