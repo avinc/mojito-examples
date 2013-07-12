@@ -37,6 +37,9 @@ YUI.add('WeatherBinderIndex', function (Y, NAME) {
                     node.one("#forecast").set("innerHTML", markup);
                 });
             });
+            node.one("#refresh").on("click", function () {
+                mp.refreshView();
+            });
             /**
              * Example code for the bind method:
              *
@@ -52,6 +55,10 @@ YUI.add('WeatherBinderIndex', function (Y, NAME) {
              *
              * });
              */
+        },
+
+        onRefreshView: function(node) {
+            this.bind(node);
         }
 
     };

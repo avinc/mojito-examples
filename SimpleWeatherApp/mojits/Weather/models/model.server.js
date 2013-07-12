@@ -1,11 +1,11 @@
 /*jslint anon:true, sloppy:true, nomen:true*/
-YUI.add('WeatherModel', function(Y, NAME) {
+YUI.add('WeatherModel', function (Y, NAME) {
 
-/**
- * The WeatherModel module.
- *
- * @module Weather
- */
+    /**
+     * The WeatherModel module.
+     *
+     * @module Weather
+     */
 
     /**
      * Constructor for the WeatherModel class.
@@ -15,7 +15,7 @@ YUI.add('WeatherModel', function(Y, NAME) {
      */
     Y.namespace('mojito.models')[NAME] = {
 
-        init: function(config) {
+        init: function (config) {
             this.config = config;
         },
 
@@ -25,8 +25,9 @@ YUI.add('WeatherModel', function(Y, NAME) {
          * @param callback {function(err,data)} The callback function to call when the
          *        data has been retrieved.
          */
-        getData: function(callback) {
-            Y.YQL("select * from weather.forecast where woeid=2295420", function(data){
+        getData: function (callback) {
+            Y.YQL("select * from weather.forecast where woeid=2295420", function (data) {
+                Y.log(data.query.created, "debug", NAME);
                 callback(null, data.query);
             });
         }
