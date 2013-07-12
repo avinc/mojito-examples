@@ -19,5 +19,9 @@
         "staticHandling": {
             "forceUpdate": true
         }
+    },
+    {
+        "settings": [ "device:iphone" ],
+        "selector": "iphone"
     }
 ]

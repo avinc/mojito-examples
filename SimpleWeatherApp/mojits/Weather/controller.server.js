@@ -30,7 +30,7 @@ YUI.add('Weather', function(Y, NAME) {
                 ac.assets.addCss('./index.css');
                 ac.done({
                     channel: data.results.channel,
-                    queryTime: data.created
+                    queryTime: new Date()
                 });
             });
         },
@@ -44,7 +44,7 @@ YUI.add('Weather', function(Y, NAME) {
                 ac.assets.addCss('./index.css');
                 ac.done({
                     channel: data.results.channel,
-                    queryTime: data.created
+                    queryTime: new Date()
                 });
             });
         }
